@@ -17,12 +17,91 @@ type PageSection = {
   links?: readonly PageLink[];
 };
 
+type DirectoryOfficer = {
+  name: string;
+  designation: string;
+  office: string;
+  phone: string;
+  email: string;
+};
+
+type DirectoryGroup = {
+  id: string;
+  label: string;
+  address: string;
+  officers: readonly DirectoryOfficer[];
+};
+
+type DirectoryData = {
+  commissioner: DirectoryOfficer;
+  groups: readonly DirectoryGroup[];
+};
+
 type PageDefinition = {
   area: string;
   title: string;
   intro: string;
   sourceUrl: string;
+  directoryData?: DirectoryData;
   sections: readonly PageSection[];
+};
+
+const directoryData: DirectoryData = {
+  commissioner: {
+    name: 'Dr. Ananya Demo',
+    designation: 'Central Provident Fund Commissioner (synthetic profile)',
+    office: 'Head Office · Prototype record',
+    phone: '00000 00001',
+    email: 'cpfc.demo@example.invalid',
+  },
+  groups: [
+    {
+      id: 'head-office',
+      label: 'Head Office',
+      address: 'Demo Bhawan, 00 Prototype Marg, New Delhi — 000000',
+      officers: [
+        { name: 'Dr. Ananya Demo', designation: 'Central Provident Fund Commissioner', office: 'Head Office', phone: '00000 00001', email: 'cpfc.demo@example.invalid' },
+        { name: 'Shri Rohan Sample', designation: 'Additional Central Provident Fund Commissioner · Operations', office: 'Head Office', phone: '00000 00002', email: 'operations.demo@example.invalid' },
+        { name: 'Smt. Meera Placeholder', designation: 'Regional Provident Fund Commissioner · Public Information', office: 'Head Office', phone: '00000 00003', email: 'information.demo@example.invalid' },
+      ],
+    },
+    {
+      id: 'zonal-offices',
+      label: 'Zonal Offices',
+      address: 'Prototype Nidhi Bhawan, Sector 00, New Delhi — 000000',
+      officers: [
+        { name: 'Shri Kabir Demo', designation: 'Additional CPFC · North Zone', office: 'North Zonal Office', phone: '00000 00011', email: 'north.zone@example.invalid' },
+        { name: 'Smt. Isha Sample', designation: 'Additional CPFC · West Zone', office: 'West Zonal Office', phone: '00000 00012', email: 'west.zone@example.invalid' },
+        { name: 'Shri Dev Placeholder', designation: 'Additional CPFC · South Zone', office: 'South Zonal Office', phone: '00000 00013', email: 'south.zone@example.invalid' },
+      ],
+    },
+    {
+      id: 'vigilance-wing',
+      label: 'Vigilance Wing',
+      address: 'Synthetic Vigilance Block, 00 Integrity Avenue, New Delhi — 000000',
+      officers: [
+        { name: 'Smt. Nandini Demo', designation: 'Chief Vigilance Officer · Prototype', office: 'Vigilance Wing', phone: '00000 00021', email: 'vigilance.demo@example.invalid' },
+        { name: 'Shri Arjun Sample', designation: 'Deputy Vigilance Officer · Prototype', office: 'Vigilance Wing', phone: '00000 00022', email: 'vigilance.support@example.invalid' },
+      ],
+    },
+    {
+      id: 'internal-audit',
+      label: 'Internal Audit Wing',
+      address: 'Synthetic Audit Block, 00 Review Road, New Delhi — 000000',
+      officers: [
+        { name: 'Shri Vikram Placeholder', designation: 'Additional CPFC · Internal Audit', office: 'Internal Audit Wing', phone: '00000 00031', email: 'audit.demo@example.invalid' },
+        { name: 'Smt. Tara Demo', designation: 'Audit Officer · Prototype', office: 'Internal Audit Wing', phone: '00000 00032', email: 'audit.support@example.invalid' },
+      ],
+    },
+    {
+      id: 'national-data-centre',
+      label: 'National Data Centre',
+      address: 'Synthetic Data Centre, Plot 00, Sector 00, Dwarka — 000000',
+      officers: [
+        { name: 'Shri Neil Sample', designation: 'Director · National Data Centre', office: 'National Data Centre', phone: '00000 00041', email: 'data.centre.demo@example.invalid' },
+      ],
+    },
+  ],
 };
 
 const pages = {
@@ -74,6 +153,7 @@ const pages = {
     title: 'EPFO Directory',
     intro: 'Find the organisational route that can help with an office, service or escalation.',
     sourceUrl: 'https://www.epfo.gov.in/directory/',
+    directoryData,
     sections: [
       {
         heading: 'Start with the right route',
@@ -374,6 +454,51 @@ const pages = {
   },
 } satisfies Record<string, PageDefinition>;
 
+function DirectoryContent({ data }: { data: DirectoryData }) {
+  return (
+    <>
+      <aside className="directory-sidebar" aria-label="Directory sections">
+        <b>Directory</b>
+        {data.groups.map((group) => <a href={`#${group.id}`} key={group.id}>{group.label}</a>)}
+        <p>All records on this page are synthetic and cannot be used to contact an EPFO office.</p>
+      </aside>
+      <div className="directory-content">
+        <section className="directory-notice" aria-label="Prototype data notice">
+          <strong>Prototype — synthetic data only.</strong>
+          <span>Names, designations, addresses, phone numbers and emails below are invented placeholders. Do not use them for official contact.</span>
+        </section>
+        <section className="directory-commissioner" aria-labelledby="directory-commissioner-heading">
+          <div className="directory-portrait" role="img" aria-label="Synthetic portrait placeholder; not a real person"><span>AD</span><small>Synthetic portrait</small></div>
+          <div>
+            <p className="section-number">01 · Head Office leadership</p>
+            <h2 id="directory-commissioner-heading">{data.commissioner.name}</h2>
+            <p className="directory-designation">{data.commissioner.designation}</p>
+            <p className="directory-office">{data.commissioner.office}</p>
+            <div className="directory-contact-row">
+              <span><b>Phone</b>{data.commissioner.phone}</span>
+              <span><b>Email</b>{data.commissioner.email}</span>
+            </div>
+          </div>
+        </section>
+        {data.groups.map((group, index) => (
+          <section className="directory-group" id={group.id} key={group.id} aria-labelledby={`${group.id}-heading`}>
+            <div className="directory-group-heading">
+              <div><p className="section-number">{String(index + 2).padStart(2, '0')}</p><h2 id={`${group.id}-heading`}>{group.label}</h2></div>
+              <p>{group.address}</p>
+            </div>
+            <div className="directory-officer-list">
+              {group.officers.map((officer) => <article className="directory-officer" key={`${group.id}-${officer.email}`}>
+                <div><h3>{officer.name}</h3><p>{officer.designation}</p><small>{officer.office}</small></div>
+                <dl><div><dt>Phone</dt><dd>{officer.phone}</dd></div><div><dt>Email</dt><dd>{officer.email}</dd></div></dl>
+              </article>)}
+            </div>
+          </section>
+        ))}
+      </div>
+    </>
+  );
+}
+
 type PageProps = { params: Promise<{ slug: string }> };
 
 export function generateStaticParams() {
@@ -404,25 +529,27 @@ export default async function PublicContentPage({ params }: PageProps) {
           <p>{page.intro}</p>
         </section>
         <div className="interior-layout">
-          <aside className="page-index" aria-label="On this page">
-            <b>On this page</b>
-            {page.sections.map((section, index) => <a href={`#section-${index + 1}`} key={section.heading}>{section.heading}</a>)}
-          </aside>
-          <div className="interior-content">
-            {page.sections.map((section, index) => (
-              <section id={`section-${index + 1}`} className="content-section" key={section.heading}>
-                <p className="section-number">{String(index + 1).padStart(2, '0')}</p>
-                <h2>{section.heading}</h2>
-                {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
-                {section.bullets && <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>}
-                {section.links && <div className="content-link-grid">{section.links.map((link) => {
-                  const external = isExternal(link.href) || link.href.startsWith('mailto:') || link.href.startsWith('tel:');
-                  return <a href={link.href} target={external ? '_blank' : undefined} rel={external ? 'noreferrer' : undefined} key={link.label}><span><b>{link.label}</b>{link.description && <small>{link.description}</small>}</span><i aria-hidden="true">{external ? '↗' : '→'}</i></a>;
-                })}</div>}
-              </section>
-            ))}
-            <p className="source-note"><b>Official source:</b> content and document destinations checked against the current public EPFO page on 24 August 2026. <a href={page.sourceUrl} target="_blank" rel="noreferrer">View current official page ↗</a></p>
-          </div>
+          {'directoryData' in page ? <DirectoryContent data={page.directoryData} /> : <>
+            <aside className="page-index" aria-label="On this page">
+              <b>On this page</b>
+              {page.sections.map((section, index) => <a href={`#section-${index + 1}`} key={section.heading}>{section.heading}</a>)}
+            </aside>
+            <div className="interior-content">
+              {page.sections.map((section, index) => (
+                <section id={`section-${index + 1}`} className="content-section" key={section.heading}>
+                  <p className="section-number">{String(index + 1).padStart(2, '0')}</p>
+                  <h2>{section.heading}</h2>
+                  {section.paragraphs?.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                  {section.bullets && <ul>{section.bullets.map((bullet) => <li key={bullet}>{bullet}</li>)}</ul>}
+                  {section.links && <div className="content-link-grid">{section.links.map((link) => {
+                    const external = isExternal(link.href) || link.href.startsWith('mailto:') || link.href.startsWith('tel:');
+                    return <a href={link.href} target={external ? '_blank' : undefined} rel={external ? 'noreferrer' : undefined} key={link.label}><span><b>{link.label}</b>{link.description && <small>{link.description}</small>}</span><i aria-hidden="true">{external ? '↗' : '→'}</i></a>;
+                  })}</div>}
+                </section>
+              ))}
+              <p className="source-note"><b>Official source:</b> content and document destinations checked against the current public EPFO page on 24 August 2026. <a href={page.sourceUrl} target="_blank" rel="noreferrer">View current official page ↗</a></p>
+            </div>
+          </>}
         </div>
       </main>
       <SiteFooter />
