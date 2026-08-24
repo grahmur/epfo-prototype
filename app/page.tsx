@@ -85,18 +85,10 @@ export default function Home() {
             <p className="hero-service-line">Provident Fund · Pension · Insurance Services</p>
             <p className="hero-intro">Access and manage EPF, pension, insurance and compliance services digitally—whether you are an employee tracking savings, an employer filing returns, or a pensioner or nominee accessing benefits.</p>
             <div className="hero-actions">
-              <a className="button primary" href="#services">Find your service <span>→</span></a>
-              <a className="button secondary" href="#how-it-works">How services work</a>
+              <a className="button secondary" href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" rel="noreferrer" aria-label="Employee login — opens the current official member portal in a new tab">Employee login <span aria-hidden="true">↗</span></a>
+              <a className="button primary" href="https://unifiedportal-emp.epfindia.gov.in/epfo/" target="_blank" rel="noreferrer" aria-label="Employer login — opens the current official employer portal in a new tab">Employer login <span aria-hidden="true">↗</span></a>
             </div>
             <p className="trust-note"><span aria-hidden="true">✓</span> Explore services without entering personal details</p>
-          </div>
-        </section>
-
-        <section className="access-strip" aria-label="Official portal access">
-          <div className="strip-logins">
-            <small>Official portal access</small>
-            <a className="strip-login employee" href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" rel="noreferrer" aria-label="Employee login — opens the current official member portal in a new tab">Employee login <span aria-hidden="true">↗</span></a>
-            <a className="strip-login employer" href="https://unifiedportal-emp.epfindia.gov.in/epfo/" target="_blank" rel="noreferrer" aria-label="Employer login — opens the current official employer portal in a new tab">Employer login <span aria-hidden="true">↗</span></a>
           </div>
         </section>
 
