@@ -1,6 +1,7 @@
 import { SiteFooter, SiteHeader } from './SiteChrome';
 import { isExternal, navigation } from './siteNavigation';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const serviceGroups = [
   {
@@ -86,9 +87,10 @@ export default function Home() {
             <p className="hero-service-line">Provident Fund · Pension · Insurance Services</p>
             <p className="hero-intro">Access and manage EPF, pension, insurance and compliance services digitally—whether you are an employee tracking savings, an employer filing returns, or a pensioner or nominee accessing benefits.</p>
             <div className="hero-actions">
-              <a className="button secondary" href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" rel="noreferrer" aria-label="Employee login — opens the current official member portal in a new tab">Employee login <span aria-hidden="true">↗</span></a>
-              <a className="button primary" href="https://unifiedportal-emp.epfindia.gov.in/epfo/" target="_blank" rel="noreferrer" aria-label="Employer login — opens the current official employer portal in a new tab">Employer login <span aria-hidden="true">↗</span></a>
-              <a className="button secondary" href="https://mis.epfindia.gov.in/PensionPaymentEnquiry/enquiry.jsp" target="_blank" rel="noreferrer" aria-label="Pensioner login — opens the current official pensioners portal in a new tab">Pensioner login <span aria-hidden="true">↗</span></a>
+              <Link className="unified-login-button" href="/login">
+                <span><small>Unified account access</small><strong>Sign in to EPFO services</strong><em>Employee · Employer · Pensioner</em></span>
+                <i aria-hidden="true">→</i>
+              </Link>
             </div>
             <p className="trust-note"><span aria-hidden="true">✓</span> Explore services without entering personal details</p>
           </div>
