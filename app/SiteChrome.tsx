@@ -2,6 +2,22 @@ import LanguageSelector from './LanguageSelector';
 import Link from 'next/link';
 import { isExternal, navigation, primaryDestinations } from './siteNavigation';
 
+const navigationCardDetails: Record<string, { icon: string; description: string }> = {
+  'About EPFO': { icon: '◎', description: 'Mission, schemes and organisation.' },
+  Directory: { icon: '⌖', description: 'Office and contact-reference information.' },
+  Services: { icon: '✦', description: 'Find services for your role.' },
+  'Grievance redressal': { icon: '!', description: 'Use the official grievance route.' },
+  'Shram Suvidha portal': { icon: '▤', description: 'Official employer compliance handoff.' },
+  'Pension enquiry': { icon: '₹', description: 'Pension-payment information portal.' },
+  'Jeevan Pramaan': { icon: '✓', description: 'Digital life-certificate guidance.' },
+  'EPF & MP Act 1952': { icon: '§', description: 'The statutory framework.' },
+  'EPF Scheme': { icon: '◫', description: 'Provident-fund scheme information.' },
+  'Resources overview': { icon: '▤', description: 'Guidance, records and publications.' },
+  Publications: { icon: '◉', description: 'Browse EPFO publications.' },
+  Recruitments: { icon: '⌂', description: 'Current recruitment information.' },
+  'Tenders/notices': { icon: '≡', description: 'Tenders and public notices.' },
+};
+
 function DestinationLink({ href, children, className }: { href: string; children: React.ReactNode; className?: string }) {
   const external = isExternal(href);
 
@@ -33,12 +49,18 @@ export function SiteHeader() {
           {navigation.map((group) => (
             <div key={group.title} className="nav-menu">
               <a className="nav-trigger" href={primaryDestinations[group.title]} aria-haspopup="true">{group.title}<span className="nav-chevron" aria-hidden="true">⌄</span></a>
-              <div className={`nav-popover ${group.links.length <= 3 ? 'nav-popover-featured' : 'nav-popover-expanded'}`}>
-                <div className="nav-popover-head"><p>{group.title}</p><small>Explore {group.title.toLowerCase()} routes</small></div>
+              <div className="nav-popover">
+                <div className="nav-popover-head"><p>{group.title}</p><small>Key services and information</small></div>
                 <div className="nav-featured-links">
-                  {group.links.slice(0, group.links.length <= 3 ? group.links.length : 2).map(([label, href], index) => (
-                    <DestinationLink key={label} className="nav-featured-link" href={href}><small>{index === 0 ? 'Start here' : 'Featured route'}</small><strong>{label}</strong><span aria-hidden="true">{isExternal(href) ? '↗' : '→'}</span></DestinationLink>
-                  ))}
+                  {group.links.slice(0, group.links.length <= 3 ? group.links.length : 2).map(([label, href]) => {
+                    const detail = navigationCardDetails[label] ?? { icon: '→', description: `Explore this ${group.title.toLowerCase()} route.` };
+
+                    return <DestinationLink key={label} className="nav-featured-link" href={href}>
+                      <span className="nav-featured-icon" aria-hidden="true">{detail.icon}</span>
+                      <span className="nav-featured-copy"><strong>{label}</strong><small>{detail.description}</small></span>
+                      <span className="nav-featured-arrow" aria-hidden="true">{isExternal(href) ? '↗' : '→'}</span>
+                    </DestinationLink>;
+                  })}
                 </div>
                 {group.links.length > 3 && <div className="nav-compact-links">
                   {group.links.slice(2).map(([label, href]) => <DestinationLink key={label} href={href}>{label}<span aria-hidden="true">{isExternal(href) ? '↗' : '→'}</span></DestinationLink>)}

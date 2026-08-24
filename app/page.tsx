@@ -140,14 +140,17 @@ export default function Home() {
         </section>
 
         <section className="umang-promo section-shell" id="umang" aria-labelledby="umang-heading">
+          <div className="umang-art" aria-hidden="true"><Image src="/umang-app.png" alt="" width={336} height={343} sizes="(max-width: 620px) 210px, 26vw" /></div>
           <div className="umang-copy">
             <p className="eyebrow">Mobile access</p>
             <h2 id="umang-heading">Raise or track EPFO claims on the go with UMANG.</h2>
             <p>Use the official UMANG service to access supported EPFO services from your phone, wherever you are.</p>
-            <a className="button primary" href="https://web.umang.gov.in/landing/department/epfo.html" target="_blank" rel="noreferrer">Open official UMANG page <span aria-hidden="true">↗</span></a>
-            <small>Official external destination · opens in a new tab</small>
+            <div className="umang-store-links">
+              <a href="https://web.umang.gov.in/landing/department/epfo.html" target="_blank" rel="noreferrer" aria-label="Get it on Google Play — opens the official UMANG page in a new tab"><span>GET IT ON</span><b>Google Play</b></a>
+              <a href="https://web.umang.gov.in/landing/department/epfo.html" target="_blank" rel="noreferrer" aria-label="Download on the App Store — opens the official UMANG page in a new tab"><span>DOWNLOAD ON THE</span><b>App Store</b></a>
+            </div>
+            <small>Store badges open the official UMANG page in a new tab.</small>
           </div>
-          <div className="umang-art" aria-hidden="true"><Image src="/umang-app.png" alt="" width={336} height={343} sizes="(max-width: 620px) 210px, 26vw" /></div>
         </section>
 
         <section className="about section-shell" id="about">
