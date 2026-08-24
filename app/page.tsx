@@ -87,6 +87,7 @@ export default function Home() {
             <div className="hero-actions">
               <a className="button secondary" href="https://unifiedportal-mem.epfindia.gov.in/memberinterface/" target="_blank" rel="noreferrer" aria-label="Employee login — opens the current official member portal in a new tab">Employee login <span aria-hidden="true">↗</span></a>
               <a className="button primary" href="https://unifiedportal-emp.epfindia.gov.in/epfo/" target="_blank" rel="noreferrer" aria-label="Employer login — opens the current official employer portal in a new tab">Employer login <span aria-hidden="true">↗</span></a>
+              <a className="button secondary" href="https://mis.epfindia.gov.in/PensionPaymentEnquiry/enquiry.jsp" target="_blank" rel="noreferrer" aria-label="Pensioner login — opens the current official pensioners portal in a new tab">Pensioner login <span aria-hidden="true">↗</span></a>
             </div>
             <p className="trust-note"><span aria-hidden="true">✓</span> Explore services without entering personal details</p>
           </div>
