@@ -32,12 +32,17 @@ export function SiteHeader() {
         <nav aria-label="Primary navigation">
           {navigation.map((group) => (
             <div key={group.title} className="nav-menu">
-              <a className="nav-trigger" href={primaryDestinations[group.title]} aria-haspopup="true">{group.title}</a>
-              <div className="nav-popover">
-                <p>{group.title}</p>
-                {group.links.map(([label, href]) => (
-                  <DestinationLink key={label} href={href}>{label}<span aria-hidden="true">{isExternal(href) ? '↗' : '→'}</span></DestinationLink>
-                ))}
+              <a className="nav-trigger" href={primaryDestinations[group.title]} aria-haspopup="true">{group.title}<span className="nav-chevron" aria-hidden="true">⌄</span></a>
+              <div className={`nav-popover ${group.links.length <= 3 ? 'nav-popover-featured' : 'nav-popover-expanded'}`}>
+                <div className="nav-popover-head"><p>{group.title}</p><small>Explore {group.title.toLowerCase()} routes</small></div>
+                <div className="nav-featured-links">
+                  {group.links.slice(0, group.links.length <= 3 ? group.links.length : 2).map(([label, href], index) => (
+                    <DestinationLink key={label} className="nav-featured-link" href={href}><small>{index === 0 ? 'Start here' : 'Featured route'}</small><strong>{label}</strong><span aria-hidden="true">{isExternal(href) ? '↗' : '→'}</span></DestinationLink>
+                  ))}
+                </div>
+                {group.links.length > 3 && <div className="nav-compact-links">
+                  {group.links.slice(2).map(([label, href]) => <DestinationLink key={label} href={href}>{label}<span aria-hidden="true">{isExternal(href) ? '↗' : '→'}</span></DestinationLink>)}
+                </div>}
               </div>
             </div>
           ))}

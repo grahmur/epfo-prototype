@@ -1,5 +1,6 @@
 import { SiteFooter, SiteHeader } from './SiteChrome';
 import { isExternal, navigation } from './siteNavigation';
+import Image from 'next/image';
 
 const serviceGroups = [
   {
@@ -136,6 +137,17 @@ export default function Home() {
               </a>
             ))}
           </div>
+        </section>
+
+        <section className="umang-promo section-shell" id="umang" aria-labelledby="umang-heading">
+          <div className="umang-copy">
+            <p className="eyebrow">Mobile access</p>
+            <h2 id="umang-heading">Raise or track EPFO claims on the go with UMANG.</h2>
+            <p>Use the official UMANG service to access supported EPFO services from your phone, wherever you are.</p>
+            <a className="button primary" href="https://web.umang.gov.in/landing/department/epfo.html" target="_blank" rel="noreferrer">Open official UMANG page <span aria-hidden="true">↗</span></a>
+            <small>Official external destination · opens in a new tab</small>
+          </div>
+          <div className="umang-art" aria-hidden="true"><Image src="/umang-app.png" alt="" width={336} height={343} sizes="(max-width: 620px) 210px, 26vw" /></div>
         </section>
 
         <section className="about section-shell" id="about">
