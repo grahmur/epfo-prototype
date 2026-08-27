@@ -1,25 +1,22 @@
 import type { Metadata } from 'next';
-import { SiteFooter, SiteHeader } from '../SiteChrome';
+import { cookies } from 'next/headers';
 import UnifiedLoginExperience from './UnifiedLoginExperience';
+import { dashboardSessionRoleKey } from './dashboardSession';
 
 export const metadata: Metadata = {
-  title: 'Unified sign in',
+  title: 'Unified Member Portal & Sign In',
   description: 'Synthetic employee, employer and pensioner sign-in prototype. No EPFO account or production system is connected.',
 };
 
-export default function LoginPage() {
+export default async function LoginPage() {
+  const cookieStore = await cookies();
+  const initialDashboardRole = cookieStore.get(dashboardSessionRoleKey)?.value;
+  const initialTranslationLanguage = cookieStore.get('googtrans')?.value.match(/^\/en\/([^/]+)$/)?.[1];
+
   return (
-    <>
-      <SiteHeader />
-      <main id="main" className="login-main">
-        <header className="login-page-heading">
-          <p className="eyebrow">One secure starting point</p>
-          <h1>Sign in for your role.</h1>
-          <p>Choose Employee, Employer or Pensioner. This approval prototype uses impossible-format demo details and never connects to an EPFO account.</p>
-        </header>
-        <UnifiedLoginExperience />
-      </main>
-      <SiteFooter />
-    </>
+    <UnifiedLoginExperience
+      initialDashboardRole={initialDashboardRole}
+      initialTranslationLanguage={initialTranslationLanguage}
+    />
   );
 }

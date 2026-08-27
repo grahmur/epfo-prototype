@@ -1,5 +1,4 @@
 import LanguageSelector from './LanguageSelector';
-import Link from 'next/link';
 import { isExternal, navigation, primaryDestinations } from './siteNavigation';
 
 const navigationCardDetails: Record<string, { icon: string; description: string }> = {
@@ -31,20 +30,20 @@ export function SiteHeader() {
       <div className="utility-bar">
         <span className="notranslate" translate="no">Prototype — synthetic data only.</span>
         <div className="utility-actions">
-          <LanguageSelector />
           <nav className="utility-links" aria-label="Support shortcuts">
-            <DestinationLink href="https://epfigms.gov.in/">Grievance redressal <span aria-hidden="true">↗</span></DestinationLink>
+            <DestinationLink href="/grievance">Grievance redressal <span aria-hidden="true">→</span></DestinationLink>
             <DestinationLink href="/locate-epfo-office">Find an EPFO office <span aria-hidden="true">→</span></DestinationLink>
             <DestinationLink href="/contact-us">Contact us <span aria-hidden="true">→</span></DestinationLink>
             <DestinationLink href="https://www.epfo.gov.in/faq-epfo/">Official FAQs <span aria-hidden="true">↗</span></DestinationLink>
           </nav>
+          <LanguageSelector />
         </div>
       </div>
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="EPFO prototype home">
+        <a className="brand" href="/" aria-label="EPFO prototype home">
           <span className="brand-mark" aria-hidden="true">EP</span>
           <span><b>EPFO</b><small>Employees’ Provident Fund Organisation</small></span>
-        </Link>
+        </a>
         <nav aria-label="Primary navigation">
           {navigation.map((group) => (
             <div key={group.title} className="nav-menu">
@@ -70,7 +69,7 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="header-actions" aria-label="Service access">
-          <Link className="header-action search-action" href="/#services" aria-label="Search services — simulated navigation" title="Search services"><span className="search-icon" aria-hidden="true" /></Link>
+          <a className="header-action search-action" href="/#services" aria-label="Search services — simulated navigation" title="Search services"><span className="search-icon" aria-hidden="true" /></a>
         </div>
       </header>
     </>

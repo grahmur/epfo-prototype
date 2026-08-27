@@ -22,7 +22,7 @@ export const navigation: readonly NavigationGroup[] = [
     title: 'Employee',
     links: [
       ['Services', '/#services'],
-      ['Grievance redressal', 'https://epfigms.gov.in/'],
+      ['Grievance redressal', '/grievance'],
       ['UMANG app', 'https://web.umang.gov.in/landing/department/epfo.html'],
       ['Employee documents', 'https://www.epfo.gov.in/employee-documents/'],
       ['International workers', 'https://www.epfo.gov.in/international-workers/'],

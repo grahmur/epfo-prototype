@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { SiteFooter, SiteHeader } from '../SiteChrome';
 import { isExternal } from '../siteNavigation';
@@ -160,7 +159,7 @@ const pages = {
         links: [
           { label: 'Locate an EPFO office', href: '/locate-epfo-office', description: 'Browse the office-locator guidance by state and regional office.' },
           { label: 'Contact EPFO', href: '/contact-us', description: 'Use the helpline, grievance and support routes.' },
-          { label: 'Grievance redressal', href: 'https://epfigms.gov.in/', description: 'Open the official EPFiGMS portal in a new tab.' },
+          { label: 'Grievance redressal', href: '/grievance', description: 'Open the EPFiGMS grievance portal.' },
         ],
       },
       {
@@ -256,7 +255,7 @@ const pages = {
       {
         heading: 'Grievance redressal',
         paragraphs: ['PF members, EPS pensioners, employers and other users can register and track grievances through the official EPFiGMS portal.'],
-        links: [{ label: 'Open EPFiGMS', href: 'https://epfigms.gov.in/', description: 'Official grievance-management portal.' }],
+        links: [{ label: 'Open EPFiGMS Grievance Portal', href: '/grievance', description: 'Central grievance-management and tracking portal.' }],
       },
       {
         heading: 'Already registered a grievance?',
@@ -507,14 +506,14 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
-  const page = pages[slug as keyof typeof pages];
+  const page: PageDefinition | undefined = pages[slug as keyof typeof pages];
 
   return page ? { title: page.title, description: page.intro } : {};
 }
 
 export default async function PublicContentPage({ params }: PageProps) {
   const { slug } = await params;
-  const page = pages[slug as keyof typeof pages];
+  const page: PageDefinition | undefined = pages[slug as keyof typeof pages];
 
   if (!page) notFound();
 
@@ -523,13 +522,13 @@ export default async function PublicContentPage({ params }: PageProps) {
       <SiteHeader />
       <main id="main" className="interior-main">
         <section className="interior-hero">
-          <nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span aria-hidden="true">/</span><span>{page.area}</span></nav>
+          <nav className="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span>{page.area}</span></nav>
           <p className="eyebrow">{page.area}</p>
           <h1>{page.title}</h1>
           <p>{page.intro}</p>
         </section>
         <div className="interior-layout">
-          {'directoryData' in page ? <DirectoryContent data={page.directoryData} /> : <>
+          {page.directoryData ? <DirectoryContent data={page.directoryData} /> : <>
             <aside className="page-index" aria-label="On this page">
               <b>On this page</b>
               {page.sections.map((section, index) => <a href={`#section-${index + 1}`} key={section.heading}>{section.heading}</a>)}

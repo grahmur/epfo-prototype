@@ -1,7 +1,6 @@
 import { SiteFooter, SiteHeader } from './SiteChrome';
 import { isExternal, navigation } from './siteNavigation';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const serviceGroups = [
   {
@@ -87,10 +86,17 @@ export default function Home() {
             <p className="hero-service-line">Provident Fund · Pension · Insurance Services</p>
             <p className="hero-intro">Access and manage EPF, pension, insurance and compliance services digitally—whether you are an employee tracking savings, an employer filing returns, or a pensioner or nominee accessing benefits.</p>
             <div className="hero-actions">
-              <Link className="unified-login-button" href="/login">
-                <span><small>Unified account access</small><strong>Sign in to EPFO services</strong><em>Employee · Employer · Pensioner</em></span>
-                <i aria-hidden="true">→</i>
-              </Link>
+              <a className="unified-login-button" href="/login">
+                <span className="login-btn-content">
+                  <strong className="login-btn-title">Sign in to EPFO services</strong>
+                  <span className="login-btn-roles">Employee · Employer · Pensioner</span>
+                </span>
+                <span className="login-btn-icon" aria-hidden="true">
+                  <svg width="15" height="15" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.333 8h9.334M8.667 4l4 4-4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </span>
+              </a>
             </div>
             <p className="trust-note"><span aria-hidden="true">✓</span> Explore services without entering personal details</p>
           </div>
@@ -141,17 +147,46 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="umang-promo section-shell" id="umang" aria-labelledby="umang-heading">
-          <div className="umang-art" aria-hidden="true"><Image src="/umang-app.png" alt="" width={336} height={343} sizes="(max-width: 620px) 210px, 26vw" /></div>
-          <div className="umang-copy">
-            <p className="eyebrow">Mobile access</p>
-            <h2 id="umang-heading">Raise or track EPFO claims on the go with UMANG.</h2>
-            <p>Use the official UMANG service to access supported EPFO services from your phone, wherever you are.</p>
-            <div className="umang-store-links">
-              <a href="https://web.umang.gov.in/landing/department/epfo.html" target="_blank" rel="noreferrer" aria-label="Get it on Google Play — opens the official UMANG page in a new tab"><span>GET IT ON</span><b>Google Play</b></a>
-              <a href="https://web.umang.gov.in/landing/department/epfo.html" target="_blank" rel="noreferrer" aria-label="Download on the App Store — opens the official UMANG page in a new tab"><span>DOWNLOAD ON THE</span><b>App Store</b></a>
+        <section className="application-section section-shell" id="application" aria-labelledby="umang-heading">
+          <div className="app-info-card">
+            <div className="phone-img" aria-hidden="true">
+              <Image
+                src="/umang-app.png"
+                alt="EPFO UMANG App Screens"
+                width={360}
+                height={400}
+                className="umang-phone-mockup"
+              />
             </div>
-            <small>Store badges open the official UMANG page in a new tab.</small>
+            <div className="app-content">
+              <h2 id="umang-heading" className="title">
+                Raise or Track EPFO Claims on the go with UMANG
+              </h2>
+              <p className="text">
+                Download the <strong>UMANG App</strong> to access all EPFO services at your fingertips—anytime, anywhere.
+              </p>
+              <div className="buttons" aria-label="Download UMANG mobile application">
+                <a
+                  href="https://play.google.com/store/apps/details?id=in.gov.umang.negd.g2c&pcampaignid=web_share"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="store-badge-link"
+                  aria-label="Get it on Google Play — opens official Google Play store in a new tab"
+                >
+                  <Image src="/google-play-badge.svg" alt="Get it on Google Play" height={48} width={162} />
+                </a>
+                <a
+                  href="https://apps.apple.com/in/app/umang/id1236448857"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="store-badge-link"
+                  aria-label="Download on the App Store — opens official Apple App Store in a new tab"
+                >
+                  <Image src="/app-store-badge.svg" alt="Download on the App Store" height={48} width={143} />
+                </a>
+              </div>
+              <small className="app-disclaimer">Store links open the official UMANG application download pages in a new tab.</small>
+            </div>
           </div>
         </section>
 
