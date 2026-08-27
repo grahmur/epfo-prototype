@@ -125,17 +125,17 @@ export default function UnifiedLoginExperience({ initialDashboardRole, initialTr
   useEffect(() => {
     if (authStep !== 'dashboard') return;
 
-    let idleTimer = window.setTimeout(endForInactivity, 60_000);
+    let idleTimer = window.setTimeout(endForInactivity, 120_000);
     const activityEvents = ['pointerdown', 'pointermove', 'keydown', 'scroll', 'touchstart'] as const;
     function resetIdleTimer() {
       window.clearTimeout(idleTimer);
-      idleTimer = window.setTimeout(endForInactivity, 60_000);
+      idleTimer = window.setTimeout(endForInactivity, 120_000);
     }
     function endForInactivity() {
       document.cookie = `${dashboardSessionRoleKey}=; Max-Age=0; path=/; SameSite=Lax`;
       setAuthStep('credentials');
       setSecret('');
-      setMessage('Simulated session ended after one minute of inactivity.');
+      setMessage('Simulated session ended after two minutes of inactivity.');
     }
 
     activityEvents.forEach((eventName) => window.addEventListener(eventName, resetIdleTimer, { passive: true }));

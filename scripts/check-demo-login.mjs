@@ -65,7 +65,11 @@ assert.match(languageSource, /window\.location\.reload\(\)/, 'Dashboard language
 assert.match(dashboardSessionSource, /epfo-prototype-dashboard-role/, 'A synthetic dashboard session must store only the selected role.');
 assert.match(source, /from '\.\/dashboardSession'/, 'The client login flow must use the shared synthetic session key.');
 assert.match(loginPageSource, /from '\.\/dashboardSession'/, 'The server login entry must use the shared synthetic session key.');
-assert.match(source, /window\.setTimeout\(endForInactivity, 60_000\)/, 'Dashboard sessions must end after one minute without activity.');
+assert.equal(
+  (source.match(/window\.setTimeout\(endForInactivity, 120_000\)/g) ?? []).length,
+  2,
+  'Dashboard sessions must start and reset a two-minute inactivity timeout.',
+);
 assert.match(source, /'pointerdown', 'pointermove', 'keydown', 'scroll', 'touchstart'/, 'Common dashboard activity must reset the idle timeout.');
 assert.match(source, /document\.cookie = `\$\{dashboardSessionRoleKey\}=; Max-Age=0/, 'Sign-out and inactivity must clear the synthetic dashboard session.');
 assert.match(loginPageSource, /await cookies\(\)/, 'The refresh response must read the synthetic role marker before rendering.');
