@@ -203,7 +203,7 @@ export default function LanguageSelector({ reloadAfterChange = false, initialTra
     setIsTranslating(true);
     setTargetLangName(languageLabel(code));
 
-    if (reloadAfterChange) {
+    if (reloadAfterChange && code !== 'en') {
       window.setTimeout(() => window.location.reload(), 160);
       return;
     }

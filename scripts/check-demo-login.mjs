@@ -61,6 +61,8 @@ assert.match(languageSource, /saved !== 'en' && !document\.querySelector\('scrip
 assert.match(languageSource, /initialTranslationLanguage/, 'Language selector must be able to receive the server-rendered target language.');
 assert.match(languageSource, /epfo-language-change/, 'Language changes must notify the login copy without a page reload.');
 assert.match(languageSource, /reloadAfterChange = false/, 'Public and login language changes must remain in place by default.');
+assert.match(languageSource, /engineSelect\.value = code/, 'English must select the translation engine’s explicit English option.');
+assert.match(languageSource, /reloadAfterChange && code !== 'en'/, 'Dashboard English restoration must run through the translation engine instead of refreshing first.');
 assert.match(languageSource, /window\.location\.reload\(\)/, 'Dashboard language changes must be able to reload fresh translatable markup.');
 assert.match(dashboardSessionSource, /epfo-prototype-dashboard-role/, 'A synthetic dashboard session must store only the selected role.');
 assert.match(source, /from '\.\/dashboardSession'/, 'The client login flow must use the shared synthetic session key.');
