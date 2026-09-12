@@ -367,7 +367,7 @@ export default async function BlogPostPage({ params }: Props) {
                 EPFO Digital Communications
               </p>
               <p style={{ margin: '0.25rem 0 0 0', fontSize: '0.875rem', color: 'var(--muted, #71635f)' }}>
-                Verified educational content. Powered by Murit Headless CMS.
+                Official public information and educational guidance.
               </p>
             </div>
             <Link

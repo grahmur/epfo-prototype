@@ -530,7 +530,7 @@ export default function BlogExplorer({ posts }: Props) {
               }}
             >
               <small style={{ color: 'var(--muted, #71635f)' }}>
-                Powered by Murit CMS
+                EPFO Public Information
               </small>
               <button
                 type="button"

@@ -205,7 +205,7 @@ export default async function Home() {
             </Link>
           </div>
           <p className="section-lede">
-            Stay informed with the latest statutory explainers, circular breakdowns, and digital service guides powered by Murit CMS.
+            Stay informed with the latest statutory explainers, circular breakdowns, and digital service guides.
           </p>
 
           <div className="home-articles-grid" aria-label="Recent articles">
