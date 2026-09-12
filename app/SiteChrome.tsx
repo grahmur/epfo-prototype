@@ -11,6 +11,7 @@ const navigationCardDetails: Record<string, { icon: string; description: string 
   'Jeevan Pramaan': { icon: '✓', description: 'Digital life-certificate guidance.' },
   'EPF & MP Act 1952': { icon: '§', description: 'The statutory framework.' },
   'EPF Scheme': { icon: '◫', description: 'Provident-fund scheme information.' },
+  'Blog & Updates': { icon: '✦', description: 'Latest news, circulars and service articles.' },
   'Resources overview': { icon: '▤', description: 'Guidance, records and publications.' },
   Publications: { icon: '◉', description: 'Browse EPFO publications.' },
   Recruitments: { icon: '⌂', description: 'Current recruitment information.' },
@@ -31,6 +32,7 @@ export function SiteHeader() {
         <span className="notranslate" translate="no">Prototype — synthetic data only.</span>
         <div className="utility-actions">
           <nav className="utility-links" aria-label="Support shortcuts">
+            <DestinationLink href="/blog">Blog & Updates <span aria-hidden="true">→</span></DestinationLink>
             <DestinationLink href="/grievance">Grievance redressal <span aria-hidden="true">→</span></DestinationLink>
             <DestinationLink href="/locate-epfo-office">Find an EPFO office <span aria-hidden="true">→</span></DestinationLink>
             <DestinationLink href="/contact-us">Contact us <span aria-hidden="true">→</span></DestinationLink>

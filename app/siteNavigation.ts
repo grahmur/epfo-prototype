@@ -61,6 +61,7 @@ export const navigation: readonly NavigationGroup[] = [
   {
     title: 'Resources',
     links: [
+      ['Blog & Updates', '/blog'],
       ['Resources overview', '/resources'],
       ['Publications', '/publications'],
       ['Press releases', '/press-releases'],
