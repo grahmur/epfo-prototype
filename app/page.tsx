@@ -1,6 +1,8 @@
 import { SiteFooter, SiteHeader } from './SiteChrome';
 import { isExternal, navigation } from './siteNavigation';
 import Image from 'next/image';
+import Link from 'next/link';
+import { getPosts } from './blog/muritClient';
 
 const serviceGroups = [
   {
@@ -66,7 +68,9 @@ function ServiceCard({ service }: { service: string[] }) {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const recentPosts = await getPosts({ limit: 3 });
+
   const websiteSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -187,6 +191,89 @@ export default function Home() {
               </div>
               <small className="app-disclaimer">Store links open the official UMANG application download pages in a new tab.</small>
             </div>
+          </div>
+        </section>
+
+        <section id="newsroom" className="recent-articles section-shell" aria-labelledby="newsroom-heading">
+          <div className="section-heading-row">
+            <div>
+              <p className="eyebrow">Newsroom & Insights</p>
+              <h2 id="newsroom-heading">Recent Updates & Articles</h2>
+            </div>
+            <Link className="button pale" href="/blog">
+              View All Posts <span aria-hidden="true">&rarr;</span>
+            </Link>
+          </div>
+          <p className="section-lede">
+            Stay informed with the latest statutory explainers, circular breakdowns, and digital service guides powered by Murit CMS.
+          </p>
+
+          <div className="home-articles-grid" aria-label="Recent articles">
+            {recentPosts.map((post) => {
+              const category = post.categories?.[0]?.name;
+              const dateFormatted = new Date(post.publishedAt).toLocaleDateString('en-IN', {
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric',
+              });
+
+              return (
+                <article key={post.slug || post.id} className="home-article-card">
+                  {post.featuredMedia?.url && (
+                    <div className="home-article-img-wrap">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={post.featuredMedia.url}
+                        alt={post.featuredMedia.alt || post.title}
+                        className="home-article-img"
+                      />
+                    </div>
+                  )}
+                  <div className="home-article-body">
+                    <div className="home-article-meta">
+                      {category ? (
+                        <span className="home-article-pill">{category}</span>
+                      ) : (
+                        <span />
+                      )}
+                      <time dateTime={post.publishedAt}>{dateFormatted}</time>
+                    </div>
+                    <h3 className="home-article-title">
+                      <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+                    </h3>
+                    {post.excerpt && <p className="home-article-excerpt">{post.excerpt}</p>}
+                    <div style={{ marginTop: 'auto' }}>
+                      <Link href={`/blog/${post.slug}`} className="home-article-link">
+                        <span>Read article</span>
+                        <span aria-hidden="true">&rarr;</span>
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+
+          <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+            <Link
+              href="/blog"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+                padding: '0.85rem 2.25rem',
+                backgroundColor: 'var(--orange-dark, #b84e11)',
+                color: '#ffffff',
+                borderRadius: '0.75rem',
+                fontWeight: 700,
+                fontSize: '1rem',
+                textDecoration: 'none',
+                boxShadow: '0 4px 14px rgba(184, 78, 17, 0.25)',
+              }}
+            >
+              <span>View All Posts &amp; Browse Drawer</span>
+              <span aria-hidden="true">&rarr;</span>
+            </Link>
           </div>
         </section>
 
