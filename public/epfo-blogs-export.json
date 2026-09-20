@@ -1,0 +1,365 @@
+{
+  "version": "1.0",
+  "site": "EPFO Digital Services Portal",
+  "exportedAt": "2026-09-20T13:32:49.805Z",
+  "total": 9,
+  "posts": [
+    {
+      "id": "online-pf-withdrawal-claim-checklist-2026",
+      "slug": "online-pf-withdrawal-claim-checklist-2026",
+      "title": "How to File Online PF Withdrawal Claims: The Definitive 2026 Checklist",
+      "date": "2026-09-12T09:00:00.000Z",
+      "publishedAt": "2026-09-12T09:00:00.000Z",
+      "updatedAt": "2026-09-12T11:30:00.000Z",
+      "lastUpdatedAt": "2026-09-12T11:30:00.000Z",
+      "author": "EPFO Digital Services Editorial Desk",
+      "excerpt": "Complete 2026 checklist for submitting online PF withdrawal claims under Form 19, 10C, and 31. Learn eligibility criteria, required KYC seeding, and avoid common rejection causes.",
+      "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&h=630&q=80",
+      "imageAlt": "Financial documentation and digital device displaying EPF online claim filing portal",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "featuredMedia": {
+        "url": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&h=630&q=80",
+        "alt": "Financial documentation and digital device displaying EPF online claim filing portal",
+        "caption": "Online claim settlement requires seeded Aadhaar, verified active bank account, and correct date of exit.",
+        "width": 1200,
+        "height": 630
+      },
+      "categories": [
+        "Employees"
+      ],
+      "tags": [
+        "PF Withdrawal",
+        "Form 19",
+        "KYC Seeding",
+        "Online Claims"
+      ],
+      "seoTitle": "How to File Online PF Withdrawal Claims: Complete Checklist (2026)",
+      "seoDescription": "Complete 2026 checklist for submitting online PF withdrawal claims under Form 19, 10C, and 31. Learn eligibility criteria, required KYC seeding, and avoid common rejection causes.",
+      "seoKeywords": "EPF claim, PF withdrawal online, Form 19, Form 10C, Form 31, UAN claim settlement, EPFO online portal, claim rejection reasons",
+      "seoImage": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&h=630&q=80",
+      "canonicalURL": "https://epfo-prototype.vercel.app/blog/online-pf-withdrawal-claim-checklist-2026",
+      "contentHtml": "<p class=\"lead\">Filing an online claim under the Employees' Provident Funds Scheme is now entirely paperless for members with verified digital credentials. However, incomplete KYC seeding and mismatched demographic records remain the leading causes for claim delays.</p>\n\n      <h2>Prerequisites for Online Claim Submission</h2>\n      <p>Before initiating an online claim under Form 19 (Final PF Settlement), Form 10C (Pension Withdrawal Benefit), or Form 31 (Non-refundable Advance), ensure all statutory prerequisites are met in your unified profile:</p>\n\n      <ul>\n        <li><strong>Universal Account Number (UAN):</strong> Must be activated and linked with an active, Aadhaar-registered mobile number to receive authentication OTPs.</li>\n        <li><strong>Bank Account Details:</strong> Verified bank account number and IFSC must be digitally approved by your employer and displayed with status \"Verified by Bank\" under the KYC tab.</li>\n        <li><strong>Date of Exit (DOE):</strong> For full withdrawal (Form 19 and 10C), the Date of Exit must be recorded by the employer or marked by the employee after two months of cessation of employment.</li>\n        <li><strong>Permanent Account Number (PAN):</strong> Seeded for claims where total service is under 5 continuous years to prevent higher TDS deduction under Section 192A.</li>\n      </ul>\n\n      <blockquote>Tip: If you encounter a spelling discrepancy between your Aadhaar and EPFO record, submit an online Joint Declaration through the <a href=\"/login\">EPFO Unified Login portal</a> before submitting a financial claim.</blockquote>\n\n      <h2>Step-by-Step Claim Submission Workflow</h2>\n      <ol>\n        <li>Sign in to the official <a href=\"https://unifiedportal-mem.epfindia.gov.in/\" target=\"_blank\" rel=\"noreferrer\">Unified Member Portal ↗</a> using your UAN and password.</li>\n        <li>Navigate to <strong>Online Services &rarr; Claim (Form-31, 19, 10C &amp; 10D)</strong>.</li>\n        <li>Verify the pre-populated member details and re-enter your linked bank account number to authenticate.</li>\n        <li>Select the required claim type based on your service status and upload a clear scanned image of a cancelled cheque or passbook first page.</li>\n        <li>Request the UIDAI Aadhaar OTP and complete biometric consent to transmit your application to the jurisdictional field office.</li>\n      </ol>\n\n      <h2>Common Reasons for Claim Rejection and How to Prevent Them</h2>\n      <p>According to the official <a href=\"https://pmvbry-cdn.epfindia.gov.in/wp-content/uploads/2025/11/CitizenCharter.pdf\" target=\"_blank\" rel=\"noreferrer\">EPFO Citizen's Charter ↗</a>, claims must be processed within 20 working days. To ensure swift auto-settlement, avoid these frequent oversights:</p>\n\n      <ul>\n        <li><strong>Illegible Cheque Leaf:</strong> Uploaded images where the member's name, account number, or IFSC are blurred trigger instant technical rejections.</li>\n        <li><strong>Unseeded Member ID:</strong> Always consolidate accounts using the One Member One EPF Account transfer feature before applying for final closure.</li>\n        <li><strong>Missing Exit Reason:</strong> Verify that the employer has marked the correct exit reason (Superannuation, Resignation, or Cessation).</li>\n      </ul>\n\n      <p>If your claim has been delayed beyond statutory turnaround standards, you can escalate the matter directly through the official <a href=\"/grievance\">EPFO Grievance Redressal mechanism</a> or reach out to your local field office via the <a href=\"/directory\">EPFO Directory</a>.</p>",
+      "contentMarkdown": "Complete 2026 checklist for submitting online PF withdrawal claims under Form 19, 10C, and 31. Learn eligibility criteria, required KYC seeding, and avoid common rejection causes.",
+      "redirectUrls": [
+        "/blog/online-pf-withdrawal-claim-checklist-2026"
+      ]
+    },
+    {
+      "id": "jeevan-pramaan-face-authentication-guide",
+      "slug": "jeevan-pramaan-face-authentication-guide",
+      "title": "Jeevan Pramaan Face Authentication: Annual Life Certificate Guide for EPS Pensioners",
+      "date": "2026-09-11T08:30:00.000Z",
+      "publishedAt": "2026-09-11T08:30:00.000Z",
+      "updatedAt": "2026-09-12T10:00:00.000Z",
+      "lastUpdatedAt": "2026-09-12T10:00:00.000Z",
+      "author": "EPFO Pensioners Welfare Directorate",
+      "excerpt": "Detailed guide for EPS 95 pensioners on submitting their annual digital life certificate (Jeevan Pramaan) using smartphone face authentication without visiting bank branches.",
+      "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&h=630&q=80",
+      "imageAlt": "Senior citizen using modern smartphone camera for biometric face authentication",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "featuredMedia": {
+        "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&h=630&q=80",
+        "alt": "Senior citizen using modern smartphone camera for biometric face authentication",
+        "caption": "EPS 95 pensioners can submit Digital Life Certificates from home using any standard smartphone camera.",
+        "width": 1200,
+        "height": 630
+      },
+      "categories": [
+        "Pensioners"
+      ],
+      "tags": [
+        "Jeevan Pramaan",
+        "EPS 95",
+        "Face Authentication",
+        "Digital Pension"
+      ],
+      "seoTitle": "Jeevan Pramaan Face Authentication: Digital Life Certificate Guide (2026)",
+      "seoDescription": "Detailed guide for EPS 95 pensioners on submitting their annual digital life certificate (Jeevan Pramaan) using smartphone face authentication without visiting bank branches.",
+      "seoKeywords": "Jeevan Pramaan, EPS 95, digital life certificate, face authentication, pensioner PPO, EPFO pension, biometric verification",
+      "seoImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&h=630&q=80",
+      "canonicalURL": "https://epfo-prototype.vercel.app/blog/jeevan-pramaan-face-authentication-guide",
+      "contentHtml": "<p class=\"lead\">Under the Employees' Pension Scheme, 1995, over 7.8 million beneficiaries must submit an annual Proof of Life to maintain uninterrupted monthly disbursements. With the introduction of UIDAI face RD service integration, pensioners can now complete verification from home without visiting bank branches or CSC centres.</p>\n\n      <h2>Technical Requirements for Face Authentication</h2>\n      <p>To use the face-authentication feature, you need:</p>\n      <ul>\n        <li>An Android smartphone (Android version 7.0 Nougat or higher) with a 5MP+ front camera and stable internet access.</li>\n        <li>The <strong>AadhaarFaceRD</strong> service app downloaded from the Google Play Store (UIDAI official application).</li>\n        <li>The <strong>Jeevan Pramaan</strong> application from the official <a href=\"https://jeevanpramaan.gov.in/\" target=\"_blank\" rel=\"noreferrer\">Jeevan Pramaan Portal ↗</a>.</li>\n        <li>Your 12-digit Pension Payment Order (PPO) number, pension disbursing agency name, and linked bank account number.</li>\n      </ul>\n\n      <h2>Step-by-Step Mobile Submission Process</h2>\n      <ol>\n        <li>Open the Jeevan Pramaan app and complete one-time operator authentication using an Aadhaar-linked mobile number.</li>\n        <li>Enter pensioner credentials: 12-digit Aadhaar Number, mobile number, Pension Payment Order (PPO) number, sanctioning authority (select \"EPFO\"), and bank account details.</li>\n        <li>Position the pensioner's face inside the highlighted circular frame under natural, even room lighting.</li>\n        <li>Follow the screen prompt to blink naturally when the camera detector captures facial landmarks.</li>\n        <li>Upon successful match with UIDAI biometric databases, a unique Pramaan ID is displayed on screen and confirmed via SMS.</li>\n      </ol>\n\n      <blockquote>Important: A Digital Life Certificate remains valid for exactly 12 continuous months from the day it is generated. There is no need to queue at banks in November if your certificate was issued in April.</blockquote>\n\n      <h2>Verifying Your Life Certificate Status</h2>\n      <p>Once submitted, the digital certificate is automatically transmitted to EPFO's central pension servers. You can track confirmation using your PPO number on the <a href=\"https://mis.epfindia.gov.in/PensionPaymentEnquiry/enquiry.jsp\" target=\"_blank\" rel=\"noreferrer\">EPFO Pension Payment Order Enquiry portal ↗</a>.</p>\n      <p>For more details on pension entitlement and death benefits under EPS 95, read our overview of <a href=\"/about-us\">EPFO Social Security Schemes</a> or browse our <a href=\"/#services\">Pensioner Services Directory</a>.</p>",
+      "contentMarkdown": "Detailed guide for EPS 95 pensioners on submitting their annual digital life certificate (Jeevan Pramaan) using smartphone face authentication without visiting bank branches.",
+      "redirectUrls": [
+        "/blog/jeevan-pramaan-face-authentication-guide"
+      ]
+    },
+    {
+      "id": "employer-revamped-ecr-filing-compliance-guide",
+      "slug": "employer-revamped-ecr-filing-compliance-guide",
+      "title": "Employer Guide to Revamped ECR Filing & Statutory Compliance 2026",
+      "date": "2026-09-10T11:00:00.000Z",
+      "publishedAt": "2026-09-10T11:00:00.000Z",
+      "updatedAt": "2026-09-12T09:15:00.000Z",
+      "lastUpdatedAt": "2026-09-12T09:15:00.000Z",
+      "author": "EPFO Compliance & Inspection Bureau",
+      "excerpt": "Actionable guide for establishment managers and HR teams on filing Electronic Challan cum Return (ECR) version 2, member wage ceiling reconciliation, and timely statutory remittances.",
+      "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&h=630&q=80",
+      "imageAlt": "Corporate HR compliance team reviewing Electronic Challan cum Return financial spreadsheets",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "featuredMedia": {
+        "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&h=630&q=80",
+        "alt": "Corporate HR compliance team reviewing Electronic Challan cum Return financial spreadsheets",
+        "caption": "Monthly remittance of statutory contributions before the 15th protects establishments from interest penalties.",
+        "width": 1200,
+        "height": 630
+      },
+      "categories": [
+        "Employers"
+      ],
+      "tags": [
+        "ECR",
+        "Employer Compliance",
+        "Challan TRRN",
+        "Statutory Filing"
+      ],
+      "seoTitle": "Employer Guide to Revamped ECR Filing & EPF Compliance (2026)",
+      "seoDescription": "Actionable guide for establishment managers and HR teams on filing Electronic Challan cum Return (ECR) version 2, member wage ceiling reconciliation, and timely statutory remittances.",
+      "seoKeywords": "revamped ECR, Electronic Challan cum Return, employer EPF compliance, Section 7Q, EDLI remittance, establishment portal, TRRN tracking",
+      "seoImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&h=630&q=80",
+      "canonicalURL": "https://epfo-prototype.vercel.app/blog/employer-revamped-ecr-filing-compliance-guide",
+      "contentHtml": "<p class=\"lead\">Under the Employees' Provident Funds &amp; Miscellaneous Provisions Act, 1952, registered establishments must generate and reconcile monthly Electronic Challan cum Return (ECR) files for all eligible personnel. Adhering to validated text formats and timely electronic banking transfers protects organizations from damages under Section 14B and interest under Section 7Q.</p>\n\n      <h2>ECR File Structure and Pre-Upload Checks</h2>\n      <p>The ECR file is an ASCII text format where fields are separated by the pound delimiter (<code>#~#</code>). Before uploading your wage sheet to the portal, verify the following core parameters:</p>\n\n      <ul>\n        <li><strong>Active Universal Account Numbers:</strong> Every member must have an allocated, verified UAN. Do not include placeholder or dummy strings in member records.</li>\n        <li><strong>Statutory Wage Cap Reconciliation:</strong> Unless a joint option under the proviso to paragraph 11(3) or 11(4) of EPS 1995 is active, pension contributions are capped at the statutory ceiling of ₹15,000.</li>\n        <li><strong>Non-Contributory Period (NCP) Tracking:</strong> Accurate calculation of days for which no wages were payable prevents member service break disputes.</li>\n        <li><strong>Exit Date Reconciliation:</strong> Record exact date of resignation or separation in the member master before generating the monthly ECR to prevent ghost liability accruals.</li>\n      </ul>\n\n      <blockquote>Note: The due date for payment of monthly contributions is the 15th day of the month following the wage month. TRRNs generated on the 15th must have electronic payments completed before midnight to prevent late tags.</blockquote>\n\n      <h2>ECR Generation and Payment Steps</h2>\n      <ol>\n        <li>Log in to the official <a href=\"https://unifiedportal-emp.epfindia.gov.in/epfo/\" target=\"_blank\" rel=\"noreferrer\">Unified Employer Portal ↗</a> using establishment credentials.</li>\n        <li>Select <strong>Payment &rarr; ECR Upload</strong> and choose the applicable wage month and contribution rate (12% or 10%).</li>\n        <li>Upload the delimited text file and review the preliminary validation error report.</li>\n        <li>Confirm summary amounts: Account 1 (EPF), Account 2 (Admin Charges), Account 10 (EPS), Account 21 (EDLI), and Account 22 (EDLI Admin).</li>\n        <li>Generate the Temporary Return Reference Number (TRRN) and proceed with electronic payment via authorized net banking or SBI e-Pay.</li>\n      </ol>\n\n      <h2>Multi-Establishment Registrations &amp; Audits</h2>\n      <p>Establishments operating multiple branches or contract labor assignments should maintain unified compliance tracking through the Ministry of Labour &amp; Employment's <a href=\"https://shramsuvidha.gov.in/\" target=\"_blank\" rel=\"noreferrer\">Shram Suvidha Portal ↗</a> (LIN unified identifier).</p>\n      <p>For assistance with TRRN reversal or inspection compliance notices, refer to our <a href=\"/locate-epfo-office\">EPFO Regional Office Directory</a> or explore the full suite of <a href=\"/#services\">Employer Online Services</a>.</p>",
+      "contentMarkdown": "Actionable guide for establishment managers and HR teams on filing Electronic Challan cum Return (ECR) version 2, member wage ceiling reconciliation, and timely statutory remittances.",
+      "redirectUrls": [
+        "/blog/employer-revamped-ecr-filing-compliance-guide"
+      ]
+    },
+    {
+      "id": "uan-aadhaar-linking-guide",
+      "slug": "uan-aadhaar-linking-guide",
+      "title": "Seamless UAN and Aadhaar Seeding for Instant Online Claim Settlement",
+      "date": "2026-09-01T11:00:00.000Z",
+      "publishedAt": "2026-09-01T11:00:00.000Z",
+      "updatedAt": "2026-09-01T11:00:00.000Z",
+      "lastUpdatedAt": "2026-09-01T11:00:00.000Z",
+      "author": "EPFO Editorial Desk",
+      "excerpt": "Demystifying demographic mismatch verification and ensuring your active mobile number receives statutory OTP notifications.",
+      "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Digital identity verification and secure biometric authentication",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "featuredMedia": {
+        "url": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Digital identity verification and secure biometric authentication",
+        "caption": "Seeding Aadhaar with UAN ensures instant claim verification and prevents identity theft.",
+        "width": 1200,
+        "height": 630
+      },
+      "categories": [
+        "Employees"
+      ],
+      "tags": [
+        "UAN",
+        "KYC"
+      ],
+      "seoTitle": "Seamless UAN and Aadhaar Seeding Guide (2026)",
+      "seoDescription": "Demystifying demographic mismatch verification and ensuring your active mobile number receives statutory OTP notifications.",
+      "seoKeywords": "UAN, Aadhaar linking, KYC, demographic verification, EPFO profile",
+      "seoImage": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80",
+      "canonicalURL": "https://epfo-prototype.vercel.app/blog/uan-aadhaar-linking-guide",
+      "contentHtml": "<p>Online service delivery in EPFO relies fundamentally on the Universal Account Number (UAN) seeded with Aadhaar and verified bank details. A single mismatch in name spelling, date of birth, or gender can prevent automated online claim settlement.</p>\n      <h2>How to Correct Demographic Details</h2>\n      <p>If you encounter a mismatch between EPFO records and UIDAI Aadhaar data, submit a Joint Declaration request through the <a href=\"/login\">Member Login Interface</a> under the 'Manage' tab. Your employer must digitally sign the modification using DSC or e-Sign before field office approval.</p>",
+      "contentMarkdown": "Demystifying demographic mismatch verification and ensuring your active mobile number receives statutory OTP notifications.",
+      "redirectUrls": [
+        "/blog/uan-aadhaar-linking-guide"
+      ]
+    },
+    {
+      "id": "pension-calculation-eps-95",
+      "slug": "pension-calculation-eps-95",
+      "title": "A Clear Primer on EPS 95 Pension Calculations and Service Accrual",
+      "date": "2026-08-28T08:45:00.000Z",
+      "publishedAt": "2026-08-28T08:45:00.000Z",
+      "updatedAt": "2026-08-28T08:45:00.000Z",
+      "lastUpdatedAt": "2026-08-28T08:45:00.000Z",
+      "author": "EPFO Editorial Desk",
+      "excerpt": "How past service periods, pensionable salary caps, and continuous employment determine monthly pension entitlement.",
+      "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Financial calculator, documents and pension payment records",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "featuredMedia": {
+        "url": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Financial calculator, documents and pension payment records",
+        "caption": "Pension entitlement under EPS 1995 is based on pensionable salary and accrued contributory service.",
+        "width": 1200,
+        "height": 630
+      },
+      "categories": [
+        "Pensioners"
+      ],
+      "tags": [
+        "EPS 95",
+        "Calculations"
+      ],
+      "seoTitle": "EPS 95 Pension Calculation & Service Accrual Primer",
+      "seoDescription": "How past service periods, pensionable salary caps, and continuous employment determine monthly pension entitlement.",
+      "seoKeywords": "EPS 95, pension calculation, EPFO pension formula, superannuation",
+      "seoImage": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1200&q=80",
+      "canonicalURL": "https://epfo-prototype.vercel.app/blog/pension-calculation-eps-95",
+      "contentHtml": "<p>Monthly pension under the Employees' Pension Scheme, 1995 is computed using the formula:</p>\n      <pre><code>Monthly Pension = (Pensionable Salary × Pensionable Service) / 70</code></pre>\n      <p>Pensionable service includes contributory service rendered after 15 November 1995. Members who have completed at least 20 years of contributory service receive a bonus of 2 additional years.</p>",
+      "contentMarkdown": "How past service periods, pensionable salary caps, and continuous employment determine monthly pension entitlement.",
+      "redirectUrls": [
+        "/blog/pension-calculation-eps-95"
+      ]
+    },
+    {
+      "id": "nomination-efiling-benefits",
+      "slug": "nomination-efiling-benefits",
+      "title": "Why E-Nomination is Crucial: Ensuring Social Security for Nominees",
+      "date": "2026-08-22T13:20:00.000Z",
+      "publishedAt": "2026-08-22T13:20:00.000Z",
+      "updatedAt": "2026-08-22T13:20:00.000Z",
+      "lastUpdatedAt": "2026-08-22T13:20:00.000Z",
+      "author": "EPFO Editorial Desk",
+      "excerpt": "Submitting digital nomination records with Aadhaar photo e-sign ensures smooth disbursal of accumulated PF and EDLI insurance.",
+      "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Family reviewing financial security and insurance protection documents",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "featuredMedia": {
+        "url": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Family reviewing financial security and insurance protection documents",
+        "caption": "Digital e-nomination with Aadhaar e-sign eliminates delays in claim settlements for legal heirs.",
+        "width": 1200,
+        "height": 630
+      },
+      "categories": [
+        "Employees"
+      ],
+      "tags": [
+        "e-Nomination",
+        "EDLI"
+      ],
+      "seoTitle": "Why E-Nomination is Crucial: Social Security Protection",
+      "seoDescription": "Submitting digital nomination records with Aadhaar photo e-sign ensures smooth disbursal of accumulated PF and EDLI insurance.",
+      "seoKeywords": "e-Nomination, EDLI insurance, EPFO nominee registration, Aadhaar e-sign",
+      "seoImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80",
+      "canonicalURL": "https://epfo-prototype.vercel.app/blog/nomination-efiling-benefits",
+      "contentHtml": "<p>Filing an e-Nomination on the <a href=\"/login\">Member Portal</a> secures your accumulated provident fund, pension, and insurance benefits for your dependents. Without a valid nomination, legal heirs must obtain succession certificates, causing unnecessary delays during difficult times.</p>",
+      "contentMarkdown": "Submitting digital nomination records with Aadhaar photo e-sign ensures smooth disbursal of accumulated PF and EDLI insurance.",
+      "redirectUrls": [
+        "/blog/nomination-efiling-benefits"
+      ]
+    },
+    {
+      "id": "transfer-pf-previous-establishment",
+      "slug": "transfer-pf-previous-establishment",
+      "title": "How to Transfer PF Balance Seamlessly When Switching Establishments",
+      "date": "2026-08-15T15:00:00.000Z",
+      "publishedAt": "2026-08-15T15:00:00.000Z",
+      "updatedAt": "2026-08-15T15:00:00.000Z",
+      "lastUpdatedAt": "2026-08-15T15:00:00.000Z",
+      "author": "EPFO Editorial Desk",
+      "excerpt": "Using the Unified Member Portal to initiate One Member One EPF Account online transfers without physical paperwork.",
+      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Online account transfer and digital data analytics dashboard",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "featuredMedia": {
+        "url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Online account transfer and digital data analytics dashboard",
+        "caption": "One Member One EPF Account service enables online account consolidation without employer paper forms.",
+        "width": 1200,
+        "height": 630
+      },
+      "categories": [
+        "Employees"
+      ],
+      "tags": [
+        "PF Transfer",
+        "Unified Portal"
+      ],
+      "seoTitle": "How to Transfer PF Balance Online When Switching Jobs",
+      "seoDescription": "Using the Unified Member Portal to initiate One Member One EPF Account online transfers without physical paperwork.",
+      "seoKeywords": "PF transfer online, One Member One EPF, Unified Portal, UAN transfer",
+      "seoImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+      "canonicalURL": "https://epfo-prototype.vercel.app/blog/transfer-pf-previous-establishment",
+      "contentHtml": "<p>When changing employers, your PF balance from the previous establishment should be consolidated into your current active Member ID. Use the 'One Member – One EPF Account' transfer feature under the 'Online Services' menu.</p>",
+      "contentMarkdown": "Using the Unified Member Portal to initiate One Member One EPF Account online transfers without physical paperwork.",
+      "redirectUrls": [
+        "/blog/transfer-pf-previous-establishment"
+      ]
+    },
+    {
+      "id": "death-claim-nominee-settlement",
+      "slug": "death-claim-nominee-settlement",
+      "title": "Navigating EDLI and Death Benefit Claims: Required Documentation",
+      "date": "2026-08-08T10:10:00.000Z",
+      "publishedAt": "2026-08-08T10:10:00.000Z",
+      "updatedAt": "2026-08-08T10:10:00.000Z",
+      "lastUpdatedAt": "2026-08-08T10:10:00.000Z",
+      "author": "EPFO Editorial Desk",
+      "excerpt": "Detailed checklist for legal heirs and registered nominees seeking financial assistance under the Employees Deposit Linked Insurance Scheme.",
+      "image": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Legal documentation and insurance certificate for death benefit claims",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "featuredMedia": {
+        "url": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Legal documentation and insurance certificate for death benefit claims",
+        "caption": "Under the EDLI Scheme, registered nominees receive up to ₹7 Lakh financial protection upon active employee demise.",
+        "width": 1200,
+        "height": 630
+      },
+      "categories": [
+        "Statutory"
+      ],
+      "tags": [
+        "EDLI",
+        "Nominee"
+      ],
+      "seoTitle": "EDLI & Death Benefit Claims: Required Documentation Checklist",
+      "seoDescription": "Detailed checklist for legal heirs and registered nominees seeking financial assistance under the Employees Deposit Linked Insurance Scheme.",
+      "seoKeywords": "EDLI scheme, death claim, EPFO insurance benefit, Form 5IF",
+      "seoImage": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=1200&q=80",
+      "canonicalURL": "https://epfo-prototype.vercel.app/blog/death-claim-nominee-settlement",
+      "contentHtml": "<p>Under the EDLI Scheme, insurance benefits of up to ₹7,00,000 are payable to the registered nominee or family members in the event of an active employee's demise. No employee contribution is required for EDLI coverage.</p>",
+      "contentMarkdown": "Detailed checklist for legal heirs and registered nominees seeking financial assistance under the Employees Deposit Linked Insurance Scheme.",
+      "redirectUrls": [
+        "/blog/death-claim-nominee-settlement"
+      ]
+    },
+    {
+      "id": "epfo-grievance-redressal-epfigms",
+      "slug": "epfo-grievance-redressal-epfigms",
+      "title": "EPFiGMS: Escalation Timelines and Tracking Your Grievance Online",
+      "date": "2026-08-01T12:00:00.000Z",
+      "publishedAt": "2026-08-01T12:00:00.000Z",
+      "updatedAt": "2026-08-01T12:00:00.000Z",
+      "lastUpdatedAt": "2026-08-01T12:00:00.000Z",
+      "author": "EPFO Editorial Desk",
+      "excerpt": "How to file, register, and monitor status updates on the Central Grievance Redressal system with unique registration numbers.",
+      "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+      "imageAlt": "Citizen grievance assistance and online support service center",
+      "imageWidth": 1200,
+      "imageHeight": 630,
+      "featuredMedia": {
+        "url": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+        "alt": "Citizen grievance assistance and online support service center",
+        "caption": "EPFiGMS provides unique registration tokens for tracking grievance escalation across three management tiers.",
+        "width": 1200,
+        "height": 630
+      },
+      "categories": [
+        "Services"
+      ],
+      "tags": [
+        "EPFiGMS",
+        "Grievance"
+      ],
+      "seoTitle": "EPFiGMS: Online Grievance Registration & Tracking Timelines",
+      "seoDescription": "How to file, register, and monitor status updates on the Central Grievance Redressal system with unique registration numbers.",
+      "seoKeywords": "EPFiGMS, EPFO grievance, track complaint, PF escalation",
+      "seoImage": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80",
+      "canonicalURL": "https://epfo-prototype.vercel.app/blog/epfo-grievance-redressal-epfigms",
+      "contentHtml": "<p>EPFiGMS (EPF Internet Grievance Management System) is the dedicated portal for redressal of member, pensioner, and employer complaints. Grievances are typically resolved within 20 working days with multiple escalation levels.</p>",
+      "contentMarkdown": "How to file, register, and monitor status updates on the Central Grievance Redressal system with unique registration numbers.",
+      "redirectUrls": [
+        "/blog/epfo-grievance-redressal-epfigms"
+      ]
+    }
+  ]
+}
