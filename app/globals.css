@@ -5013,6 +5013,91 @@ footer { display: grid; grid-template-columns: 1.2fr .8fr 1fr; gap: 2rem; align-
   padding: 0;
 }
 
+/* Murit CMS Pre-rendered Also Read Cards */
+.murit-article-content .also-read,
+.murit-article-content .also-read-card,
+.murit-article-content .also-read-block,
+.murit-article-content [data-type="also-read"],
+.murit-article-content aside.also-read,
+.murit-article-content div[class*="also-read"],
+.murit-article-content div[class*="alsoRead"] {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  padding: 1.1rem 1.35rem;
+  margin: 2rem 0;
+  background-color: var(--paper, #fffaf4);
+  border: 1px solid var(--line, #ded7cc);
+  border-left: 4px solid var(--orange, #f67511);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(75, 49, 45, 0.04);
+}
+
+.murit-article-content .also-read-label,
+.murit-article-content .also-read-tag,
+.murit-article-content .also-read-badge,
+.murit-article-content .also-read__label,
+.murit-article-content [class*="also-read"] > span:first-child,
+.murit-article-content [class*="alsoRead"] > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffffff !important;
+  background-color: var(--orange-dark, #b84e11);
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.murit-article-content .also-read a,
+.murit-article-content .also-read-card a,
+.murit-article-content .also-read-link,
+.murit-article-content .also-read__link,
+.murit-article-content [class*="also-read"] a,
+.murit-article-content [class*="alsoRead"] a {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--ink, #4b312d) !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  line-height: 1.4;
+  transition: color 0.15s ease;
+}
+
+.murit-article-content .also-read a:hover,
+.murit-article-content .also-read-card a:hover,
+.murit-article-content [class*="also-read"] a:hover,
+.murit-article-content [class*="alsoRead"] a:hover {
+  color: var(--orange, #f67511) !important;
+}
+
+/* Murit CMS Responsive Multi-Column Grids */
+.murit-article-content .content-columns,
+.murit-article-content .content-columns--50-50,
+.murit-article-content .content-columns--33-33-33 {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.murit-article-content .content-columns__column {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .murit-article-content .content-columns,
+  .murit-article-content .content-columns--50-50,
+  .murit-article-content .content-columns--33-33-33 {
+    flex-direction: column;
+  }
+}
+
 /* Homepage Recent Articles */
 .home-articles-grid {
   display: grid;
